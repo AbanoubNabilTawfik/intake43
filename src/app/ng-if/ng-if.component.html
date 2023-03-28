@@ -1,0 +1,37 @@
+<p>ng-if works!</p>
+<!-- 
+<h2 *ngIf="false">
+    Hello World
+</h2>
+
+<h2 *ngIf="showMessage">
+    Welcome to ITI
+</h2> -->
+
+<!-- <h2 *ngIf="isLoggedIn else elseBlock">
+    Welcome {{fullName}}
+</h2>
+
+
+<ng-template #elseBlock>
+    <h2>
+        Welcome Guest
+    </h2>
+</ng-template> -->
+
+<div *ngIf="isLoggedIn; then thenBlock; else elseBlcok">
+
+</div>
+
+<ng-template #thenBlock>
+    <h2>
+        Welcome {{fullName}}
+    </h2>
+</ng-template>
+
+
+<ng-template #elseBlcok>
+    <h2>
+        Welcome Guest
+    </h2>
+</ng-template>
