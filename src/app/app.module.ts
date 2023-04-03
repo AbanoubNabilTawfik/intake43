@@ -20,6 +20,10 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { SquarePipe } from './square.pipe';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { SquarePipe } from './square.pipe';
     NgSwitchComponent,
     NgForComponent,
     PipesComponent,
-    SquarePipe
+    SquarePipe,
+    ParentComponent,
+    ChildComponent,
+    EmployeeListComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
